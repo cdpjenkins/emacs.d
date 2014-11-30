@@ -38,3 +38,6 @@
 
 ;; Make sure SASS files use CSS mode
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . css-mode))
+
+;; Line numbers are useful
+(global-linum-mode)
