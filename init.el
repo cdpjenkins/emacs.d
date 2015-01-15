@@ -18,9 +18,6 @@
   '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 (add-to-list 'load-path "~/.emacs.d/custom")
-(load "01ruby.el")
-(load "02emacslisp.el")
-(load "03clojure.el")
  
 ;; Allow resizing with ctrl and mouse wheel
 (global-set-key [C-mouse-4] 'text-scale-increase)
@@ -41,3 +38,10 @@
 
 ;; Line numbers are useful
 (global-linum-mode)
+
+(load "general.el")
+(load "ruby.el")
+(load "emacslisp.el")
+(load "clojure.el")
+(load "org-mode-stuff.el")
+
