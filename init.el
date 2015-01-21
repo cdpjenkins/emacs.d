@@ -45,3 +45,15 @@
 (load "clojure.el")
 (load "org-mode-stuff.el")
 
+;; Add Haskell stuff
+;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
+
+(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
+
+(add-hook 'haskell-mode-hook 'interactive-haskell-mode)
+
+(add-hook 'haskell-mode-hook 
+	  (lambda () (define-key haskell-mode-map (kbd "M-.") 'haskell-mode-jump-to-def)))
+
