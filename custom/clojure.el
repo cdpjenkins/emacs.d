@@ -5,3 +5,5 @@
 
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)
+
+(add-to-list 'exec-path "/Users/cdpj/bin")
