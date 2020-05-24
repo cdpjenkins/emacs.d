@@ -11,7 +11,7 @@
 (global-auto-revert-mode 1)
 
 ;; Projectile mode key
-(global-set-key (kbd "C-c C-p") 'projectile-global-mode)
+;(global-set-key (kbd "C-c C-p") 'projectile-global-mode)
 
 ;; Make sure SASS files use CSS mode
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . css-mode))

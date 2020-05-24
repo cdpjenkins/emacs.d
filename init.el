@@ -14,7 +14,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (cider twittering-mode rspec-mode robe rainbow-delimiters projectile-rails popup paredit magit htmlize highlight-indentation haskell-mode flymake-ruby enh-ruby-mode company clojure-test-mode))))
+    (json-mode clj-refactor projectile-speedbar projectile cider twittering-mode rspec-mode robe rainbow-delimiters projectile-rails popup paredit magit htmlize highlight-indentation haskell-mode flymake-ruby enh-ruby-mode company clojure-test-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -41,7 +41,13 @@
 (global-auto-revert-mode 1)
 
 ;; Projectile mode key
-(global-set-key (kbd "C-c C-p") 'projectile-global-mode)
+
+;; Projectile Mode shizzle
+(projectile-mode +1)
+;(global-set-key (kbd "C-c C-p") 'projectile-mode)
+(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+
 
 ;; Make sure SASS files use CSS mode
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . css-mode))
